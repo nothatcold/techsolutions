@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fdf3e7;
+}
+
+header, .intro, .parallax {
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: #ee6d44;
+  text-align: center;
+}
+
+.header .logo {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.header .header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-size: 50px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header p {
+  font-size: 20px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #cc5a32;
+}
+
+.topnav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav li {
+  float: left;
+  margin-right: 20px;
+}
+
+.topnav li:last-child {
+  float: right;
+}
+
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ee6d44;
+  color: white;
+}
+
+.parallax {
+  background-image: url('/imagens/background.jpg');
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.parallax h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.parallax p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Altera a direção para coluna */
+  margin-top: 20px;
+}
+
+.leftcolumn {
+  flex: 3;
+  padding: 10px 40px 40px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Alinha os itens em coluna */
+}
+
+.card label {
+  margin-bottom: 5px; /* Espaço abaixo do rótulo */
+  font-weight: 600; /* Deixa o texto do rótulo mais destacado */
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card textarea {
+  width: 100%; /* Faz os campos ocuparem toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  margin-bottom: 15px; /* Espaço entre os campos */
+  border: 1px solid #ccc; /* Borda do campo */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+.card input[type="submit"] {
+  background-color: #ee6d44; /* Cor do botão */
+  color: white; /* Cor do texto no botão */
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  border: none; /* Remove a borda padrão */
+  border-radius: 4px; /* Borda arredondada do botão */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.card input[type="submit"]:hover {
+  background-color: #cc5a32; /* Cor ao passar o mouse */
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #cc5a32;
+  color: white;
+  margin-top: 20px;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav li {
+    float: none;
+    width: 100%;
+  }
+
+  .topnav li:last-child {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav {
+    flex-direction: column;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  flex-grow: 1;
+}
+
+.intro .container {
+  background-color: rgba(255, 255, 255, 0.726);
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  border-radius: 8px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.intro p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #000000;
+  text-align: justify;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.perfil-img {
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
